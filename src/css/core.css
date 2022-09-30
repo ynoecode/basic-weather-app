@@ -1,0 +1,162 @@
+/* 
+  Google Fonts API
+  Font used: Poppins
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+/* 
+  Color Palettes
+  This color palette is from https://colorhunt.co/. 
+  Link for the palette: https://colorhunt.co/palette/222831393e4600adb5eeeeee
+ */
+:root {
+  --primary-color: #00ADB5;
+  --primary-dark: #222831;
+  --secondary-dark: #393E46;
+  --primary-light: #EEEEEE;
+}
+
+* {
+  background: var(--primary-dark) !important;
+  font-family: 'Comfortaa';
+  color: var(--primary-light) !important;
+}
+
+.container {
+  justify-content: center;
+}
+
+.title {
+  padding: 20px 0 10px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* 
+  Search Section 
+*/
+.search-card {
+  padding: 10px 0 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.search {
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+.search-bar {
+  padding: 5px 0 1px 0;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  outline: none;
+}
+
+.search-icon {
+  border: none;
+}
+
+/* 
+  Weather 
+*/
+
+.preloader-gif {
+  padding: 30px 0 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.preloader-plane {
+  width: 100px;
+}
+
+.weather-card {
+  padding: 20px 0 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.weather-preloader.preloader-gif {
+  visibility: visible;
+}
+
+.weather-preloader.preloader-gif:after {
+  visibility: hidden !important;
+}
+
+
+.weather-card.loading {
+  visibility: hidden;
+}
+
+.weather-card.loading:after {
+  visibility: visible;
+}
+
+.city {
+  color: var(--primary-color) !important;
+}
+
+.weather-properties-con {
+  padding-top: 20px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.temperature-text {}
+
+.weather-description-con {
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-description-icon {
+  padding-right: 5px;
+}
+
+.weather-description-text {
+  padding-top: 20px;
+  text-transform: capitalize;
+}
+
+.weather-humid-ws {
+  display: flex !important;
+  align-items: center;
+}
+
+.weather-humidity-con {
+  padding-top: 20px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-humidity-percentatge-text {
+  padding-left: 5px;
+}
+
+.weather-properties-icon {
+  padding-right: 10px;
+  width: 30px;
+  height: auto;
+}
+
+.weather-wind-speed-con {
+  padding-top: 20px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-wind-speed-text {
+  padding-left: 5px;
+}
