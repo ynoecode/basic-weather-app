@@ -1,6 +1,6 @@
 <!-- Welcoming Section  -->
 <div align="center">
-  <img src="https://i.imgur.com/o2vPxxD.png" alt="Weather App Logo"/>
+  <img src="https://i.imgur.com/svaEIg1.png" alt="Weather App Logo"/>
 </div>
 
 <hr />
