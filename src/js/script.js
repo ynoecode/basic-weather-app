@@ -101,11 +101,17 @@ let weather = {
   }
 }
 
+/**
+ * ? When users clicked the "🔍"
+ */
 searchButton
   .addEventListener("click", function () {
     weather.search()
   })
 
+/**
+ * ? When users pressed the "🔘" or enter key.
+ */
 searchBar
   .addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
