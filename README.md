@@ -52,7 +52,7 @@
 </div>
 
 <div align="center">
-  <a href="">
+  <a href="https://ynoecode.github.io/weather-app/">
     <img src="https://i.imgur.com/iWrmy01.png" alt="Web Preview"/>
   </a>
 </div>
