@@ -64,5 +64,5 @@
   </p>
 </div>
 
-<img scr="https://repobeats.axiom.co/api/embed/b650c5c13a0c8a5ed1600e7d441dfbaa4453bb7c.svg" alt="Repobeats" width="100%"/>
+<img src="https://repobeats.axiom.co/api/embed/b650c5c13a0c8a5ed1600e7d441dfbaa4453bb7c.svg" alt="Repobeats" width="100%"/>
 
