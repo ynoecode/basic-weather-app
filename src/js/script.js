@@ -101,7 +101,6 @@ let weather = {
   }
 }
 
-
 searchButton
   .addEventListener("click", function () {
     weather.search()
