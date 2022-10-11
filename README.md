@@ -1,11 +1,6 @@
 <!-- Welcoming Section  -->
 <div align="center">
-  <img src="https://i.imgur.com/o2vPxxD.png" alt="Weather App Logo"/>
-</div>
-<div align="center">
-  <p>
-    <img alt="Instagram" src="https://ForTheBadge.com/images/badges/built-with-love.svg" width="20%"/>
-  </p>
+  <img src="https://i.imgur.com/svaEIg1.png" alt="App Name"/>
 </div>
 
 <hr />
@@ -49,9 +44,25 @@
 </div>
 <br />
 
-<!-- README Version Section -->
+<!-- Preview Section Section -->
 <div align="center">
   <h4>
-    📝 README.md version: <span>v1.0.0</span>
+    🖼 Preview (Click image to visit page.)
   </h4>
 </div>
+
+<div align="center">
+  <a href="https://ynoecode.github.io/weather-app/">
+    <img src="https://i.imgur.com/iWrmy01.png" alt="Web Preview"/>
+  </a>
+</div>
+<br />
+
+<div align="center">
+  <p>
+    <img alt="Built With Love" src="https://ForTheBadge.com/images/badges/built-with-love.svg" width="20%"/>
+  </p>
+</div>
+
+<img src="https://repobeats.axiom.co/api/embed/b650c5c13a0c8a5ed1600e7d441dfbaa4453bb7c.svg" alt="Repobeats" width="100%"/>
+
