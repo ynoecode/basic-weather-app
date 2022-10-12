@@ -19,6 +19,16 @@ let searchButton = document.querySelector(".search button")
 let weatherCard = document.querySelector(".weather-card")
 let weatherPreloader = document.querySelector(".weather-preloader")
 
+/**
+ * ? Unused classes
+ */
+let container = document.querySelector(".container")
+let title = document.querySelector(".title")
+let searchCard = document.querySelector(".search-card")
+let searchContainer = document.querySelector(".search")
+let searchIcon = document.querySelector(".search-icon")
+ 
+
 let weather = {
   /** 
    * ? Fetching data from the weather Open Weather API.
@@ -101,12 +111,17 @@ let weather = {
   }
 }
 
+/**
+ * ? When users clicked the "search" button, in will activate the `search` function.
+ */
 searchButton
   .addEventListener("click", function () {
     weather.search()
   })
 
-
+/**
+ * ? When users pressed the "enter" key, in will activate the `search` function.
+ */
 searchBar
   .addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
