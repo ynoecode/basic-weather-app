@@ -101,12 +101,17 @@ let weather = {
   }
 }
 
+/**
+ * ? When users clicked the "search" button, in will activate the `search` function.
+ */
 searchButton
   .addEventListener("click", function () {
     weather.search()
   })
 
-
+/**
+ * ? When users pressed the "enter" key, in will activate the `search` function.
+ */
 searchBar
   .addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
