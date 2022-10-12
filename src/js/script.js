@@ -19,6 +19,16 @@ let searchButton = document.querySelector(".search button")
 let weatherCard = document.querySelector(".weather-card")
 let weatherPreloader = document.querySelector(".weather-preloader")
 
+/**
+ * ? Unused classes
+ */
+let container = document.querySelector(".container")
+let title = document.querySelector(".title")
+let searchCard = document.querySelector(".search-card")
+let searchContainer = document.querySelector(".search")
+let searchIcon = document.querySelector(".search-icon")
+ 
+
 let weather = {
   /** 
    * ? Fetching data from the weather Open Weather API.
