@@ -18,6 +18,8 @@ let searchBar = document.querySelector(".search-bar")
 let searchButton = document.querySelector(".search button")
 let weatherCard = document.querySelector(".weather-card")
 let weatherPreloader = document.querySelector(".weather-preloader")
+let undefinedLocationEl = document.querySelector(".undefined-location")
+let resetButtonEl = document.querySelector(".reset")
 
 /**
  * ? Unused classes
@@ -27,7 +29,7 @@ let title = document.querySelector(".title")
 let searchCard = document.querySelector(".search-card")
 let searchContainer = document.querySelector(".search")
 let searchIcon = document.querySelector(".search-icon")
- 
+
 
 let weather = {
   /** 
@@ -41,9 +43,30 @@ let weather = {
       + key.weather_key
     )
     .then((response) => response.json())
-    .then((data) => this.displayWeather(data))
+    .then((data) => {
+      if(data.name === undefined) {
+        weatherPreloader.classList.add("hidden")
+        weatherPreloader.classList.remove("active")
+
+        undefinedLocationEl.classList.add("active")
+        if (weatherCard.classList.contains("active")) {
+          weatherCard.classList.remove("active")
+          weatherCard.classList.add("hidden")
+          undefinedLocationEl.classList.add("active")
+          undefinedLocationEl.classList.remove("hidden")
+        }
+      } else {
+        this.displayWeather(data)
+        weatherPreloader.classList.remove("active")
+        weatherPreloader.classList.add("hidden")
+        weatherCard.classList.add("active")
+        weatherCard.classList.remove("hidden")
+        undefinedLocationEl.classList.add("hidden")
+        undefinedLocationEl.classList.remove("active")
+      }
+    })
     .catch(error => {
-      console.log("Error: ", error)
+      console.error("Error: ", error)
     })
   },
   /** 
@@ -56,12 +79,6 @@ let weather = {
     const { speed } = data.wind
 
     const displayWeatherIcon = "https://openweathermap.org/img/wn/"+ icon +"@2x.png"
-
-    /**
-     * ? Displaying `name, icon, description, temp, humidity, speed` to 
-     * ? the browser's console.
-     */
-    console.log(name, icon, description, temp, humidity, speed)
 
     /**
      * ? Displaying location.
@@ -92,9 +109,6 @@ let weather = {
      * ? Displaying wind speed.
      */
     weatherWindSpeed.innerText = speed
-
-    weatherPreloader.remove()
-    weatherCard.classList.remove("loading");
   },
   /**
    * ? Fetches the value that users input.
@@ -108,7 +122,12 @@ let weather = {
      * ? After the button was clicked, the value will be cleared.
      */
     searchBar.value = ""
-  }
+  },
+  reset: function () {
+    weatherPreloader.classList.add("active");
+    weatherPreloader.classList.remove("hidden");
+    undefinedLocationEl.classList.add("hidden");
+  } 
 }
 
 /**
@@ -127,6 +146,11 @@ searchBar
     if (event.key === "Enter") {
       weather.search()
     }
+  })
+
+resetButtonEl
+  .addEventListener("click", function () {
+    
   })
 
 

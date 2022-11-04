@@ -47,14 +47,12 @@
 <!-- Preview Section Section -->
 <div align="center">
   <h4>
-    🖼 Preview (Click image to visit page.)
+    🖼 Preview
   </h4>
 </div>
 
 <div align="center">
-  <a href="https://ynoecode.github.io/weather-app/">
     <img src="https://i.imgur.com/iWrmy01.png" alt="Web Preview"/>
-  </a>
 </div>
 <br />
 
