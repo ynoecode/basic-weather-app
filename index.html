@@ -7,10 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Basic Weather App</title>
 		<!-- Favicons -->
-		<link rel="shortcut icon" href="/src/imgs/favicon/favicon.png" type="image/x-icon" />
-		<link rel="manifest" href="./src/configs/site.webmanifest" />
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 		<!-- Stylesheets -->
-		<link rel="stylesheet" href="./src/css/core.css" />
+		<link rel="stylesheet" href="core.css" />
+    <!-- JavaScripts -->
+		<script type="text/javascript" src="script.js" defer></script>
 	</head>
 	<body>
 		<div class="container">
@@ -21,11 +22,11 @@
 				</div>
 				<div class="weather-container">
 					<div class="weather-preloader preloader-gif">
-						<img src="./src/imgs/gifs/paper-plane.gif" alt="Preload Plane" class="preloader-plane" />
+						<img src="paper-plane.gif" alt="Preload Plane" class="preloader-plane" />
 					</div>
 					<div class="undefined-location">
 						<div class="error-location">
-							<img class="error-img" src="src/imgs/Sad.png" alt="Sad" />
+							<img class="error-img" src="Sad.png" alt="Sad" />
 							<div class="text-error">Location not found.</div>
 						</div>
 						<button class="reset" onclick="weather.reset()">Reset</button>
@@ -64,7 +65,5 @@
     <div class="footer">
       <div class="footer-content">developed by <a class="links" href="https://github.com/ynoecode" target="_blank">@ynoecode<a>.</div>
     </div>
-		<!-- JavaScripts -->
-		<script type="text/javascript" src="./src/js/script.js"></script>
 	</body>
 </html>
