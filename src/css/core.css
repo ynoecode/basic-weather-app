@@ -11,37 +11,40 @@
   Link for the palette: https://colorhunt.co/palette/222831393e4600adb5eeeeee
  */
 :root {
-  --primary-color: #00ADB5;
-  --primary-dark: #222831;
-  --secondary-dark: #393E46;
+  --primary-color: #E45826;
+  --primary-dark: #39393C;
   --primary-light: #EEEEEE;
 }
 
 * {
-  background: var(--primary-dark) !important;
-  font-family: 'Comfortaa';
-  color: var(--primary-light) !important;
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+
+body {
+  background: url('/src/imgs/bg/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container {
+  padding: 100px 0 10px 0;
   justify-content: center;
-}
-
-.title {
-  padding: 20px 0 10px 0;
-  text-align: center;
-  font-weight: 700;
-  font-size: 24px;
 }
 
 /* 
   Search Section 
 */
 .search-card {
-  padding: 10px 0 10px 0;
+  padding: 50px 0 10px 0;
+  width: 400px;
+  height: 500px;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  border: 3px solid var(--primary-dark);
+  box-shadow: 0px 10px var(--primary-dark);
+  background: var(--primary-light);
 }
 
 .search {
@@ -50,14 +53,27 @@
 }
 
 .search-bar {
-  padding: 5px 0 1px 0;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  width: 300px;
   border: none;
-  border-bottom: 1px solid var(--primary-color);
+  border: 3px solid var(--primary-dark);
+  box-shadow: 0px 10px var(--primary-dark);
   outline: none;
 }
 
-.search-icon {
-  border: none;
+.search-button {
+  padding: 10px 10px 10px 10px;
+  border: 3px solid var(--primary-dark);
+  box-shadow: 0px 10px var(--primary-dark);
+  color: var(--primary-dark) !important;
+  outline: none;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  background: var(--primary-dark) !important;
+  color: var(--primary-light) !important;
 }
 
 /* 
@@ -76,37 +92,68 @@
 }
 
 .weather-card {
-  padding: 20px 0 20px 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  color: var(--primary-dark);
 }
 
-.weather-preloader.preloader-gif {
+.preloader-gif {
   visibility: visible;
 }
 
-.weather-preloader.preloader-gif:after {
-  visibility: hidden !important;
-}
-
-
-.weather-card.loading {
+.undefined-location {
+  padding-top: 20px;
   visibility: hidden;
+  text-align: center;
 }
 
-.weather-card.loading:after {
-  visibility: visible;
+.error-location {
+  text-align: center;
+  display: block;
+}
+
+.error-img {
+  width: 200px;
+  height: 200px;
+}
+
+.reset {
+  margin-top: 40px;
+  padding: 10px 10px 10px 10px;
+  border: 3px solid var(--primary-dark);
+  box-shadow: 0px 10px var(--primary-dark);
+  outline: none;
+}
+
+.reset:hover {
+  cursor: pointer;
+  background: var(--primary-dark) !important;
+  color: var(--primary-light) !important;
+}
+
+
+
+.location-result {
+  font-weight: 200;
+  font-size: 50px !important;
+  color: var(--primary-dark) !important;
 }
 
 .city {
-  color: var(--primary-color) !important;
+  font-weight: 600;
+  font-size: 50px !important;
+  color: var(--primary-dark) !important;
+}
+
+.upper-properties {
+  display: inline-block;
 }
 
 .weather-properties-con {
-  padding-top: 20px;
-  display: flex !important;
-  justify-content: center;
+  padding: 0 20px 0 20px;
+  display: inline-flex;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -159,4 +206,34 @@
 
 .weather-wind-speed-text {
   padding-left: 5px;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: var(--background-light);
+  text-align: center;
+}
+
+.footer-content {
+  color: var(--primary-light) !important;
+  padding: 10px 10px 10px 10px;
+  background: var(--primary-dark) !important;
+}
+
+.links {
+  color: var(--primary-color) !important;
+  text-decoration: none;
+}
+
+/* Global Class */
+.active {
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
 }

@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    <!-- Meta Tags -->
+		<!-- Meta Tags -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Basic Weather App</title>
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/imgs/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/imgs/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/imgs/favicon-16x16.png">
-    <link rel="manifest" href="./src/configs/site.webmanifest">
-
-    <!-- Stylesheets -->
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="/src/imgs/favicon/favicon.png" type="image/x-icon" />
+		<link rel="manifest" href="./src/configs/site.webmanifest" />
+		<!-- Stylesheets -->
 		<link rel="stylesheet" href="./src/css/core.css" />
-    
 	</head>
 	<body>
 		<div class="container">
-      <div class="title">Weather App</div>
 			<div class="search-card">
 				<div class="search">
 					<input type="text" placeholder="Search city or country..." class="search-bar" />
-					<button class="search-icon" onclick="weather.search()">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00ADB5" class="bi bi-search" viewBox="0 0 16 16"> 
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg>
-						</svg>
-					</button>
+					<button class="search-button" onclick="weather.search()">Search</button>
 				</div>
-        <div class="weather-container">
-          <div class="weather-preloader preloader-gif">
-            <img src="./src/imgs/gifs/paper-plane.gif" alt="Preload Plane" class="preloader-plane"/>
-          </div>
-          <div class="weather-card loading">
-            <h2>Weather in 
-              <span class="city">...</span>
-            </h2>
-            <div class="weather-properties-con">
-              <img src="https://cdn-icons-png.flaticon.com/512/2100/2100100.png" alt="Weather Humidity Icon" class="weather-properties-icon" />
-              <span class="temperature-text">0</span><span class="degree">°</span>
-            </div>
-            <div class="weather-description-con">
-              <img src="" alt="" class="weather-description-icon" />
-              <span class="weather-description-text"></span>
-            </div>
-            <div class="weather-properties-con">
-              <img src="https://cdn-icons-png.flaticon.com/512/3262/3262966.png" alt="Weather Humidity Icon" class="weather-properties-icon" />
-              Humidty:
-              <span class="weather-humidity-percentatge-text">0</span><span>%</span>
-            </div>
-            <div class="weather-properties-con">
-              <img src="https://cdn-icons-png.flaticon.com/512/1585/1585400.png" alt="Wind Speed" class="weather-properties-icon" />
-              Wind Speed:
-              <span class="weather-wind-speed-text"> 0</span><span class="weather-wind-speed-unit">km/h</span>
-            </div>
-          </div>
-        </div>
+				<div class="weather-container">
+					<div class="weather-preloader preloader-gif">
+						<img src="./src/imgs/gifs/paper-plane.gif" alt="Preload Plane" class="preloader-plane" />
+					</div>
+					<div class="undefined-location">
+						<div class="error-location">
+							<img class="error-img" src="src/imgs/Sad.png" alt="Sad" />
+							<div class="text-error">Location not found.</div>
+						</div>
+						<button class="reset" onclick="weather.reset()">Reset</button>
+					</div>
+					<div class="weather-card hidden">
+						<h2 class="location-result">
+							Weather in <br />
+							<span class="city"></span>
+						</h2>
+						<div class="upper-properties">
+							<div class="weather-properties-con">
+								<img src="https://cdn-icons-png.flaticon.com/512/2100/2100230.png" alt="Weather Temperature Icon" class="weather-properties-icon" />
+								<span class="temperature-text">0</span><span class="degree">° C</span>
+							</div>
+							<div class="weather-properties-con">
+								<img src="https://cdn-icons-png.flaticon.com/512/1585/1585362.png" alt="Weather Humidity Icon" class="weather-properties-icon" />
+								Humidty:
+								<span class="weather-humidity-percentatge-text">0</span><span>%</span>
+							</div>
+							<div class="weather-properties-con">
+								<img src="https://cdn-icons-png.flaticon.com/512/6015/6015171.png" alt="Wind Speed" class="weather-properties-icon" />
+								Wind Speed:
+								<span class="weather-wind-speed-text"> 0</span><span class="weather-wind-speed-unit">km/h</span>
+							</div>
+						</div>
+						<div class="lower-properties">
+							<div class="weather-properties-con">
+								<img src="" alt="" class="weather-description-icon" />
+								<span class="weather-description-text"></span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-      
 		</div>
-
-    <!-- JavaScripts -->
-    <script type="text/javascript" src="./src/js/script.js"></script>
+    <div class="footer">
+      <div class="footer-content">developed by <a class="links" href="https://github.com/ynoecode" target="_blank">@ynoecode<a>.</div>
+    </div>
+		<!-- JavaScripts -->
+		<script type="text/javascript" src="./src/js/script.js"></script>
 	</body>
 </html>
