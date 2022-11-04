@@ -1,0 +1,239 @@
+/* 
+  Google Fonts API
+  Font used: Poppins
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+/* 
+  Color Palettes
+  This color palette is from https://colorhunt.co/. 
+  Link for the palette: https://colorhunt.co/palette/222831393e4600adb5eeeeee
+ */
+:root {
+  --primary-color: #E45826;
+  --primary-dark: #39393C;
+  --primary-light: #EEEEEE;
+}
+
+* {
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+
+body {
+  background: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  padding: 100px 0 10px 0;
+  justify-content: center;
+}
+
+/* 
+  Search Section 
+*/
+.search-card {
+  padding: 50px 0 10px 0;
+  width: 400px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 3px solid var(--primary-dark);
+  box-shadow: 0px 10px var(--primary-dark);
+  background: var(--primary-light);
+}
+
+.search {
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+.search-bar {
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  width: 300px;
+  border: none;
+  border: 3px solid var(--primary-dark);
+  box-shadow: 0px 10px var(--primary-dark);
+  outline: none;
+}
+
+.search-button {
+  padding: 10px 10px 10px 10px;
+  border: 3px solid var(--primary-dark);
+  box-shadow: 0px 10px var(--primary-dark);
+  color: var(--primary-dark) !important;
+  outline: none;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  background: var(--primary-dark) !important;
+  color: var(--primary-light) !important;
+}
+
+/* 
+  Weather 
+*/
+
+.preloader-gif {
+  padding: 30px 0 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.preloader-plane {
+  width: 100px;
+}
+
+.weather-card {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--primary-dark);
+}
+
+.preloader-gif {
+  visibility: visible;
+}
+
+.undefined-location {
+  padding-top: 20px;
+  visibility: hidden;
+  text-align: center;
+}
+
+.error-location {
+  text-align: center;
+  display: block;
+}
+
+.error-img {
+  width: 200px;
+  height: 200px;
+}
+
+.reset {
+  margin-top: 40px;
+  padding: 10px 10px 10px 10px;
+  border: 3px solid var(--primary-dark);
+  box-shadow: 0px 10px var(--primary-dark);
+  outline: none;
+}
+
+.reset:hover {
+  cursor: pointer;
+  background: var(--primary-dark) !important;
+  color: var(--primary-light) !important;
+}
+
+
+
+.location-result {
+  font-weight: 200;
+  font-size: 50px !important;
+  color: var(--primary-dark) !important;
+}
+
+.city {
+  font-weight: 600;
+  font-size: 50px !important;
+  color: var(--primary-dark) !important;
+}
+
+.upper-properties {
+  display: inline-block;
+}
+
+.weather-properties-con {
+  padding: 0 20px 0 20px;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.temperature-text {}
+
+.weather-description-con {
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-description-icon {
+  padding-right: 5px;
+}
+
+.weather-description-text {
+  padding-top: 20px;
+  text-transform: capitalize;
+}
+
+.weather-humid-ws {
+  display: flex !important;
+  align-items: center;
+}
+
+.weather-humidity-con {
+  padding-top: 20px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-humidity-percentatge-text {
+  padding-left: 5px;
+}
+
+.weather-properties-icon {
+  padding-right: 10px;
+  width: 30px;
+  height: auto;
+}
+
+.weather-wind-speed-con {
+  padding-top: 20px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-wind-speed-text {
+  padding-left: 5px;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: var(--background-light);
+  text-align: center;
+}
+
+.footer-content {
+  color: var(--primary-light) !important;
+  padding: 10px 10px 10px 10px;
+  background: var(--primary-dark) !important;
+}
+
+.links {
+  color: var(--primary-color) !important;
+  text-decoration: none;
+}
+
+/* Global Class */
+.active {
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
+}
